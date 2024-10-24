@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>426</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>BanAdder</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icons/icon.png</normaloff>Icons/icon.png</iconset>
+  </property>
+  <property name="whatsThis">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(46, 46, 46);
+color: rgb(167, 167, 167);</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Имя в айди</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="id_name">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>82</y>
+     <width>201</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+color: rgb(167, 167, 167);
+border-radius: 5px;
+border: 2px solid  rgb(74, 74, 74);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="display_name">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>32</y>
+     <width>201</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+color: rgb(167, 167, 167);
+border-radius: 5px;
+border: 2px solid  rgb(74, 74, 74);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Отображаемое имя</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_clear">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>490</y>
+     <width>91</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+border-radius: 5px;
+border: 2px solid  rgb(74, 74, 74);
+QToolTip { 
+                           background-color: rgb(30, 30, 30);
+							color: rgb(167, 167, 167);
+							border-radius: 5px;
+							border: 2px solid  rgb(74, 74, 74);
+                           }</string>
+   </property>
+   <property name="text">
+    <string>Очистить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_create">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>490</y>
+     <width>91</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+border-radius: 5px;
+border: 2px solid  rgb(74, 74, 74);
+QToolTip { 
+                           background-color: rgb(30, 30, 30);
+							color: rgb(167, 167, 167);
+							border-radius: 5px;
+							border: 2px solid  rgb(74, 74, 74);
+                           }</string>
+   </property>
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="maket_banner">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>164</width>
+     <height>324</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(140, 140, 140);
+border-radius: 5px;
+border: 2px solid  rgb(74, 74, 74);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>320</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="maket_shield">
+   <property name="geometry">
+    <rect>
+     <x>252</x>
+     <y>150</y>
+     <width>164</width>
+     <height>324</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(140, 140, 140);
+border-radius: 5px;
+border: 2px solid  rgb(74, 74, 74);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>320</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>63</x>
+     <y>124</y>
+     <width>61</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Баннер</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>318</x>
+     <y>124</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Щит</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="pattern_item">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>82</y>
+     <width>186</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+color: rgb(167, 167, 167);
+border-radius: 5px;
+border: 2px solid  rgb(74, 74, 74);</string>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string>creeper</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>20</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>creeper</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>flower</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>globe</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>mojang</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>piglin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>skull</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="button_move_up">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>159</y>
+     <width>50</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>47</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+border: 3px solid  rgb(74, 74, 74);
+border-radius: 10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/arrow_up.png</normaloff>Icons/arrow_up.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>37</width>
+     <height>43</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>192</x>
+     <y>410</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>WASD</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_move_down">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>219</y>
+     <width>50</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>47</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+border: 3px solid  rgb(74, 74, 74);
+border-radius: 10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/arrow_down.png</normaloff>Icons/arrow_down.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>37</width>
+     <height>43</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_move_left">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>279</y>
+     <width>50</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>47</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+border: 3px solid  rgb(74, 74, 74);
+border-radius: 10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/arrow_left.png</normaloff>Icons/arrow_left.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>37</width>
+     <height>43</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_move_right">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>339</y>
+     <width>50</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>47</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+border: 3px solid  rgb(74, 74, 74);
+border-radius: 10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/arrow_right.png</normaloff>Icons/arrow_right.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>37</width>
+     <height>43</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="Line" name="line_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>115</y>
+     <width>406</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="author">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>32</y>
+     <width>186</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+color: rgb(167, 167, 167);
+border-radius: 5px;
+border: 2px solid  rgb(74, 74, 74);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>10</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Автор</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>477</y>
+     <width>406</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_edit_previous">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>490</y>
+     <width>201</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(30, 30, 30);
+border-radius: 5px;
+border: 2px solid  rgb(74, 74, 74);
+QToolTip { 
+                           background-color: rgb(30, 30, 30);
+							color: rgb(167, 167, 167);
+							border-radius: 5px;
+							border: 2px solid  rgb(74, 74, 74);
+                           }</string>
+   </property>
+   <property name="text">
+    <string>Изменить существующие</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>60</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Патерн предмет</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="about_dispaly_name">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>11</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>WhatsThisCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Имя, которым будет называться патерн. Имя, которое будут видеть игроки&lt;/p&gt;&lt;p&gt;С поддержкой юникод символов!&lt;/p&gt;&lt;p&gt;&lt;br/&gt;Оставьте пустым, если вам не нужно редактировать фалы, в которых используется этот параметр!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolTip {color: black}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</iconset>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="about_dispaly_name_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>96</x>
+     <y>62</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>WhatsThisCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Имя, которое будет использоваться в ключах/айди.&lt;br/&gt;Может состоять только из маленьких букв английского алфавита и нижних подчеркиваний.&lt;/p&gt;&lt;p&gt;Оставьте пустым, если вам не нужно редактировать фалы, в которых используется этот параметр!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolTip {color: black}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</iconset>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="about_dispaly_name_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>61</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>WhatsThisCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Какой предмет будет испльзоваться для иконки патерна (не точно!)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolTip {color: black}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</iconset>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="about_dispaly_name_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>278</x>
+     <y>11</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>WhatsThisCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Автор патерна&lt;/p&gt;&lt;p&gt;Оставьте пустым, если вам не нужно редактировать фалы, в которых используется этот параметр!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolTip {color: black}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</iconset>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="about_dispaly_name_5">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>204</x>
+     <y>442</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>WhatsThisCursor</cursorShape>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Управление патернами. &lt;br/&gt;Вы можете выбирать, какой патерн двигать. Желтое выделение значит, что этот патерн выбран и будет сдвинут при нажатии стрелочек на экране, или клавиш WASD&lt;/p&gt;&lt;p&gt;Оставьте пустыми, если вам не нужно создавать новые текстуры!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolTip {color: black}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</normaloff>../../../Kostumator3000_(PyQT6)/program/button_about.png</iconset>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>display_name</zorder>
+  <zorder>label_2</zorder>
+  <zorder>id_name</zorder>
+  <zorder>label</zorder>
+  <zorder>button_clear</zorder>
+  <zorder>button_create</zorder>
+  <zorder>pattern_item</zorder>
+  <zorder>line_6</zorder>
+  <zorder>author</zorder>
+  <zorder>label_10</zorder>
+  <zorder>line_8</zorder>
+  <zorder>button_move_left</zorder>
+  <zorder>label_5</zorder>
+  <zorder>maket_banner</zorder>
+  <zorder>button_move_up</zorder>
+  <zorder>button_move_down</zorder>
+  <zorder>label_9</zorder>
+  <zorder>button_move_right</zorder>
+  <zorder>maket_shield</zorder>
+  <zorder>label_4</zorder>
+  <zorder>button_edit_previous</zorder>
+  <zorder>label_3</zorder>
+  <zorder>about_dispaly_name</zorder>
+  <zorder>about_dispaly_name_2</zorder>
+  <zorder>about_dispaly_name_3</zorder>
+  <zorder>about_dispaly_name_4</zorder>
+  <zorder>about_dispaly_name_5</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>display_name</tabstop>
+  <tabstop>button_clear</tabstop>
+  <tabstop>button_create</tabstop>
+  <tabstop>id_name</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,10 @@
+{
+  "_comment": "Patterns related to weapons / armour.",
+  "values": [
+    "mmb:crown",
+    "mmb:hammer",
+    "mmb:shield",
+    "mmb:sword",
+    "mmb:trident"
+  ]
+}

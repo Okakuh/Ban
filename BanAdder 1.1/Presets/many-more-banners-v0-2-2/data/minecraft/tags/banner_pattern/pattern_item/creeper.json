@@ -1,0 +1,11 @@
+{
+  "_comment": "Patterns related to mobs.",
+  "values": [
+    "mmb:blam",
+    "mmb:ribs",
+    "mmb:pillager",
+    "mmb:villager",
+    "mmb:ghast",
+	"mmb:ppl"
+  ]
+}
